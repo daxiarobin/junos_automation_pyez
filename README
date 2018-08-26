@@ -1,0 +1,8 @@
+Introduction: Sample network automation scripts by using PyEZ
+
+display_ospf_int_table:
+	Use YAML Table and View approach to retrive OSPF interface information and
+	present in table format
+
+lib:
+	Independant Python modules which provide common functions.
