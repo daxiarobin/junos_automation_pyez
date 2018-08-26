@@ -1,0 +1,46 @@
+Introduction: Common functions
+	getopts.py - Handle user input options/parameters
+	inputops.py - Define input option attributes
+	errorcode.py - Error handling funciton
+	
+Usage:
+	getopts.py
+		Step 1: Construct option descrption list 
+		The elements in this list are all InputOpts objects.
+		
+		Step 2: Read and store the input values
+		
+		:param
+			optlist_add	-	list of InputOpts objects to be added 
+			optlist_del	-	list of option names (string only) to be removed
+		
+		Example:
+		
+		from getopts import GetOpts
+		optlist_add = []
+		optlist_del = []
+		opts = GetOpts(optlist_add,optlist_del)
+	
+	inputopts.py
+		parameters
+			optname	-	option name, normally a sigle letter, eg "n"
+			longdes	-	full description of the option,
+						eg: node name or ip address
+			type	-	data type of the option, default is string
+			shortdes	-	short description of the given option
+			mandatory	-	Whther this option is mandatory. True or False
+							Default value is False
+		
+		Example
+			from inputopts import InputOpts
+			_inputopt = InputOpts()
+			_inputopt.optname = 'n'
+			_inputopt.longdes = 'nodename or ip'
+			_inputopt.shortdes = 'node'
+			_inputopt.mandatory = 'True'
+			_inputopt.type = 'string'
+			
+	errorcode.py
+		Example:
+			from errorcode import ErrorCode
+			err = ErrorCode()

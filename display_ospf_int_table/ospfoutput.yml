@@ -1,0 +1,14 @@
+---
+Ospf_int_Table:
+ rpc: get-ospf-interface-information
+ item: ospf-interface
+ key: interface-name
+ view: OspfIntView
+OspfIntView:
+ fields:
+  interface_name: interface-name
+  ospf_interface_state: ospf-interface-state
+  ospf_area: ospf-area
+  dr_id: dr-id
+  bdr_id: bdr-id
+  neighbor_count: neighbor-count
