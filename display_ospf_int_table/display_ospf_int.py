@@ -38,7 +38,7 @@ Get input values
 opts = GetOpts(optlist_add,optlist_del)
 
 '''
-Quite the script if node or node list is not specified
+Quit the script if node or node list is not specified
 '''
 if opts.returncode == 12:
 	sys.exit(1)
