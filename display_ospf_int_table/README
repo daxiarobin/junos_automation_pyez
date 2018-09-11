@@ -2,6 +2,27 @@ Introduction:
 	Use YAML Table and View to retrive OSPF interface information accross the give node(s)
 	and present the result in a table format.
 	
+
+Installation:
+All the relevent script files need to be installed based on the following file structure:
+
+<pareent directory>
+|
+|--- display_ospf_int_table (or any other folder name)
+|    |
+|    |---display_ospf_int.py
+|    |---ospfoutput.yml  (optional)
+|    |---nodelist (optional)
+|    |---README
+|
+|--- lib
+     |
+     |---errorcode.py
+     |---getopts.py
+     |---iniputopts.py
+      
+
+	
 Usage:
 	./display_ospf_int.py	(-n <node name or ip> | -l <node list>)
 							{-u <cli user name>}{-p <cli password>}
