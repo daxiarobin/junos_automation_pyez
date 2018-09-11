@@ -22,6 +22,13 @@ class ErrorCode(object):
 		print (msg)
 		return msg
 		
+	def thrownanymsg(self,errmessage):
+		'''
+		Print any error message based on user input
+		'''
+		print (errmessage)
+		return errmessage
+		
 	def returnmsg(self,code):
 		return {
 		self.NOERROR: '',
