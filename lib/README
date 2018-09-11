@@ -37,7 +37,7 @@ Usage:
 			_inputopt.optname = 'n'
 			_inputopt.longdes = 'nodename or ip'
 			_inputopt.shortdes = 'node'
-			_inputopt.mandatory = 'True'
+			_inputopt.mandatory = True
 			_inputopt.type = 'string'
 			
 	errorcode.py
